@@ -21,7 +21,7 @@ const CustomerSchema = new Schema({
         required: true,
         enum: ['user', 'admin'],
         default: 'user'
-     }]
+    }]
 });
 
 module.exports = mongoose.model('Customer', CustomerSchema);

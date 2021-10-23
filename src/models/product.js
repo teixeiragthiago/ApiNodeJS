@@ -16,7 +16,7 @@ const ProductSchema = new Schema({
         index: true,
         unique: true
     },
-    description:{
+    description: {
         type: String,
         required: [true, 'A descrição é obrigatória!']
     },
@@ -32,7 +32,7 @@ const ProductSchema = new Schema({
     tags: [{
         type: String,
         required: true
-     }]
+    }]
 });
 
 module.exports = mongoose.model('Product', ProductSchema);

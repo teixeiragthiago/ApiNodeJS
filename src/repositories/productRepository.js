@@ -33,7 +33,7 @@ exports.getByTag = async(tag) => {
 }
 
 exports.post = async(data) => {
-    var product = new Product(data);
+    const product = new Product(data);
     await product.save();
 }
 

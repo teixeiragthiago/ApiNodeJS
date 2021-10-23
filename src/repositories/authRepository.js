@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const Customer = mongoose.model('Customer');
 
-exports.authenticate = async(data) => {
+exports.authenticate = async (data) => {
     const res = await Customer.findOne({
         email: data.email,
         password: data.password
@@ -10,7 +10,7 @@ exports.authenticate = async(data) => {
     return res;
 }
 
-exports.getById = async(id) =>{
+exports.getById = async (id) => {
     const res = await Customer.findById(id);
     return res;
 }

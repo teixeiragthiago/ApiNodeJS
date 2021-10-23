@@ -3,7 +3,7 @@
 const express = require('express');
 const router = express.Router();
 
-var object = {
+const object = {
     nome: 'Thiago',
     idade: '21',
     profissao: 'Desenvolvedor'

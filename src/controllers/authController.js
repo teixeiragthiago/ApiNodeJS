@@ -17,7 +17,7 @@ exports.authenticate = async(req, res, next) => {
             });
             return;
         }
-        
+
         const token = await authService.generateToken({
             email: customer.email,
             name: customer.name
@@ -60,7 +60,7 @@ exports.refreshToken = async(req, res, next) => {
         });
 
         res.status(201).send({
-            token: token,
+            token: tokenData,
             data: {
                 email: customer.email,
                 name: customer.name

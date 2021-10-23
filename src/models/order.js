@@ -45,7 +45,7 @@ const schema = new Schema({
         product: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Product'
-        },        
+        },
         title: {
             type: mongoose.Schema.Types.String,
             ref: 'Product'
